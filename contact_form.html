@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>CyberStone | Home</title>
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Page Specific CSS-->
+    <link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/contact_form.css">
+	
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Staatliches|Rokkitt:300|Poppins:400" rel="stylesheet">
+	
+	 <script>
+	/* validate the email address */
+    function isEmail() 
+	{
+      var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+	  if (!document.contact_form.email.value.match(regex))
+		alert("You have entered an invalid email address, please try again.");
+    }    
+  </script>
+</head>
+
+<!-- Body Content -->
+<body>
+
+    <div class="header">
+
+		<!--*****************************************************************************-->
+        <!-- Navigation -->
+        <div id="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <h3> <a href="index.html">
+                        <img src="images/logo.jpg" width="200" height="50"/>
+                    </a></h3>
+            </div>
+            <!-- Navigation Buttons -->
+            <ul>
+                <li class="animate"><a href="about.html">ABOUT US</a></li>
+                <li class="animate"><a href="current_employees.html">THE TEAM</a></li>
+                <li class="animate"><a href="packages.html">PACKAGES</a></li>
+                <li class="animate"><a href="contact_form.html">CONTACT US</a></li>
+            </ul>
+        </div>
+		<!--*****************************************************************************-->
+    </div>
+
+<div>
+<h3>Ways To Get In Touch</h3>
+
+	<div class="container">
+	To report an incident<br>Call: 03002759623
+	</div>
+	<div class="container">
+	Report a vulnerability<br>Call 03009218531
+	</div>
+	<div class="container">
+	General enquiries<br>Call 03002729065
+	</div>
+	<div class="container">
+	To purchase a product,<br> call 0300749386
+	</div>
+
+</div>
+
+<div class="messageus">
+	<h3>To send us a message, please enter your details: </h3>
+	<form action="ha.sharma20@silverstone-utc.co.uk" name="contact_form">
+		<label for="first_name">First Name</label>
+		<input name="first_name" type="text" required placeholder="Fred"/>
+		<br>
+		<label for="last_name">Last Name</label>
+		<input name="last_name" type="text" required placeholder="Bloggs"/>
+		<br>
+		<label for="email">Email</label>
+		<input name="email" type="email" required placeholder="you@domain.com" onchange="isEmail()"/>
+		<br>
+		<label for="message">Message</label><br>
+		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+		<div class="center">
+			<input type="submit" value="Submit">
+		</div>
+	</form>	
+</div>
+
+<div class="footer">
+&#169;Cyberstone 2023
+</div>
+
+  
+</body>
+</html>
